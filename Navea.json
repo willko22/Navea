@@ -13,5 +13,181 @@
 				"color": "#915abf"
 			}
 		]
-	}
+	},
+	"monster": [
+		{
+			"name": "Crow Swordguard",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"source": "Navea",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "1d8 + 2",
+				"average": 6
+			},
+			"speed": {
+				"walk": 15,
+				"fly": 100
+			},
+			"str": 13,
+			"dex": 22,
+			"con": 15,
+			"int": 8,
+			"wis": 14,
+			"cha": 18,
+			"passive": 18,
+			"cr": "18",
+			"senses": [
+				"Darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"save": {
+				"str": "+7",
+				"con": "+8",
+				"int": "+5",
+				"wis": "+8"
+			},
+			"resist": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Swordsworn",
+					"entries": [
+						"This small creature has by some strange turn of events been fatefully intertwined with an ancient magical sword, and this sword gives it many phenomenal boons and powers. ",
+						"Crow Swordguard is not a hostile creature unless someone is hostile towards it or tries to take away the sword it swore to safeguard. The sword cannot willingly leave the Swordguard’s grasp as long as it is alive."
+					]
+				},
+				{
+					"name": "--Razorwing.",
+					"entries": [
+						"Each time Crow Swordguard makes an attack, before the attack roll is made, it can choose one of the following effects to add to the attack."
+					]
+				},
+				{
+					"name": "-Razorwing - Whirlwind Slashes",
+					"entries": [
+						"When the Swordguard makes an attack, it can choose to damage all additional creatures within its reach with the same attack. All creatures within reach except for the original target that the original attack roll would also hit takes {@damage 3d6} slashing damage. "
+					]
+				},
+				{
+					"name": "-Razorwing - Air Cutter",
+					"entries": [
+						"The swordguard’s attack creates a 15-foot wide and 20-foot long line of razorlike wind in the direction of your target. Each creature in the area must make a {@dc 20} Strength saving throw, being pushed 15 feet in the direction following the line and taking {@damage 3d6} slashing damage on a failure, or only half as much damage and not being pushed away on a success. "
+					]
+				},
+				{
+					"name": "-Razorwing - Uppercut",
+					"entries": [
+						"If the target is hit by the original attack, it is immediately moved 30 feet upwards. If it has no way how to stay in the air, it will fall down at the end of its turn. ",
+						"If the target moves into a solid object, it stops its movement upwards and takes {@damage 3d6} bludgeoning damage."
+					]
+				},
+				{
+					"name": "--Razorwing - Tailwind",
+					"entries": [
+						"If the original attack hits, Swordguard can immediately move up to 15 feet away without provoking attacks of opportunity. "
+					]
+				},
+				{
+					"name": "No Mistakes",
+					"entries": [
+						"If Swordguard succeeds on a saving throw, it suffers no damage or negative consequences from the effect."
+					]
+				},
+				{
+					"name": "Speed Strike",
+					"entries": [
+						"If Swordguard uses the Dash Action, it can make one Fabled Sword attack as a bonus action. If the Swordguard hits with this attack after moving at least 120 feet in a straight line, the hit automatically becomes a critical hit. "
+					]
+				},
+				{
+					"name": "Uncanny Retaliation",
+					"entries": [
+						"If Swordguard uses the Dodge action, its AC increases to 22 for the duration and each time it is missed by an attack, it can automatically move up to 15 feet away without provoking attacks of opportunity and make one melee attack. "
+					]
+				},
+				{
+					"name": "Phenomenal Flier",
+					"entries": [
+						"Any fall damage the Swordguard takes is reduced by 20, and it has an advantage on saving throws against going {@condition prone} while in the air. "
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Swordguard makes six attacks."
+					]
+				},
+				{
+					"name": "Fabled Sword",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}20({@dice 4d6 + 6}) slashing damage"
+					]
+				},
+				{
+					"name": "Wing Slash",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}13({@dice 2d6 + 6}) slashing damage. The Swordguard can freely move up to 15 feet in a straight line as part of making this attack."
+					]
+				},
+				{
+					"name": "Beak",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}13({@dice 2d6 + 6}) piercing damage. The target must make a {@dc 20} Constitution saving throw. On failure, they become {@condition blinded} until the end of their next turn."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"bonus": [
+				{
+					"name": "Speed of wind",
+					"entries": [
+						"Swordgouard can use Dodge action or Dash action as a bonus action."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/willko22/Navea/blob/main/Images/Bestiary/Crow%20Swordguard/The%20Swordguard.png?raw=true"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://github.com/willko22/Navea/blob/main/Images/Bestiary/Crow%20Swordguard/The%20Swordguard_token.png?raw=true",
+			"environment": [
+				"forest",
+				"mountain"
+			]
+		}
+	]
 }
