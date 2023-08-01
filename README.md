@@ -1,2 +1,2 @@
 # Navea
-Setting and campaign for dnd i'm creating
+Setting and campaign for dnd I'm creating
