@@ -27,15 +27,12 @@
 			],
 			"ac": [
 				{
-					"ac": 16,
-					"from": [
-						"{@item plate armor|phb}"
-					]
+					"ac": 20,
 				}
 			],
 			"hp": {
-				"formula": "1d8 + 2",
-				"average": 6
+				"formula": "35d8 + 70",
+				"average": 227
 			},
 			"speed": {
 				"walk": 15,
