@@ -16,7 +16,7 @@
 	},
 	"monster": [
 		{
-			"name": "Crow Swordguard",
+			"name": "The Crow Swordguard",
 			"size": [
 				"M"
 			],
@@ -28,6 +28,8 @@
 			"ac": [
 				{
 					"ac": 20,
+					"from": [
+						"natural armor"
 					]
 				}
 			],
